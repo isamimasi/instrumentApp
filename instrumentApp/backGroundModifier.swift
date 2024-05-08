@@ -5,4 +5,14 @@
 //  Created by F. ISAMI. on 2024/05/08.
 //
 
-import Foundation
+import SwiftUI
+extension Image {
+    func backgroundModifier() -> some View {
+        self
+        //
+            .resizable()
+            .ignoresSafeArea()
+            .scaledToFill()
+        
+    }
+}
